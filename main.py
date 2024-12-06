@@ -176,7 +176,7 @@ def main():
 
     # save information
     parser.add_argument('--save_dir', type=str, default='./saved_models')
-    parser.add_argument('--save_name', type=str, default='test.pth')
+    parser.add_argument('--save_name', type=str, default='best.pth')
     parser.add_argument('--seed', default=12345, type=int, help='seed for initializing training.')
     parser.add_argument('--gpu', default=0, type=int, help='GPU id to use.')
     
@@ -204,9 +204,9 @@ def main():
 
     # dataset configuration
     parser.add_argument('--train_text_path', type=str, default='/home/ubuntu14/wcs/up_load/text_data/train.txt')
-    parser.add_argument('--test_text_path', type=str, default='/home/ubuntu14/wcs/up_load/text_data/test.txt')
+    parser.add_argument('--test_text_path', type=str, default='/home/ubuntu14/wcs/up_load/text_data/valid.txt')
     parser.add_argument('--train_image_path', type=str, default='/home/ubuntu14/wcs/imgs/train')
-    parser.add_argument('--test_image_path', type=str, default='/home/ubuntu14/wcs/imgs/test')
+    parser.add_argument('--test_image_path', type=str, default='/home/ubuntu14/wcs/imgs/valid')
     parser.add_argument('--train_set_len', type=int, default=29040)
     parser.add_argument('--num_workers', type=int, default=20)
 
